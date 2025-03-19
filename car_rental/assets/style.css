@@ -1,0 +1,181 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: #2c3e50;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Management Header (Title Above, Button Below) */
+.management-header {
+    display: flex;
+    flex-direction: column;  /* Stack title & button */
+    align-items: flex-start; /* Align text to left */
+    gap: 10px;  /* Space between title & button */
+    margin-bottom: 20px;
+}
+
+.management-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* "+ Add" Button */
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: 0.3s;
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures proper button styling */
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+/* General Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align elements */
+    gap: 20px; /* Space between cards */
+    padding: 40px 10%;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10%;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.card i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+th {
+    background-color: #343a40;
+    color: white;
+    padding: 12px;
+}
+
+/* Table Data */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Edit & Delete Buttons */
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Edit Button */
+button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Delete Button */
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Status Colors */
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.rented {
+    color: red;
+    font-weight: bold;
+}
